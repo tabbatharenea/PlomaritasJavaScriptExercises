@@ -12,11 +12,11 @@ body {
     }
 
 section {
-padding: 10px;
-margin: 10px auto;
-border-radius: 10px;
-font-size: 1.5rem;
-transition: .5s all;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    transition: .5s all;
     }
 
 section:hover {

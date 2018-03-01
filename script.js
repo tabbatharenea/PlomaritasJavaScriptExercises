@@ -42,10 +42,10 @@ var toPrint = prompt("Would you like to print your name? Please type 'yes' or 'n
 while (toPrint === "yes") {
     alert(name);
     name = name += "!";
+    console.log(name);
     toPrint = prompt("Would you like to print your name again? Please type 'yes' or 'no'.");
     }
     alert("Thanks for playing!");
-    console.log("Thanks for playing!");
   }
   document.getElementById("exercise3_btn").addEventListener("click", printName);
 
@@ -55,9 +55,9 @@ function  toEat() {
 var shouldEat = "You should be eating ";
 var suggest = "I suggest you try ";
 
-var breakfastFood = "Oatmeal & Strawberries.";
-var lunchFood = "A sandwich and Soup.";
-var dinnerFood = "Pizza and a salad.";
+var breakfastFood = "oatmeal & strawberries.";
+var lunchFood = "a sandwich and Soup.";
+var dinnerFood = "pizza and a salad.";
 
 var timeOfDay = prompt("Is it currently morning, afternoon, or evening?");
 

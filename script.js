@@ -25,13 +25,15 @@ function buildString() {
         userPlay = prompt("Would you like to play? Type 'yes' or 'no'.");
             if(userPlay === "yes") {
             userWord = prompt("Enter any word") + " ";
-            userString = userString += userWord;
+            userString += userWord;
         }
     }
     while (userPlay === "yes");
+    
     alert("Your whole string is: '" + userString + "'");
     console.log("Your whole string is: '" + userString + "'");
-}
+    }
+
     document.getElementById("exercise2_btn").addEventListener("click", buildString);
 
   //exercise 3
@@ -45,8 +47,10 @@ while (toPrint === "yes") {
     console.log(name);
     toPrint = prompt("Would you like to print your name again? Please type 'yes' or 'no'.");
     }
+
     alert("Thanks for playing!");
   }
+
   document.getElementById("exercise3_btn").addEventListener("click", printName);
 
 
@@ -74,4 +78,5 @@ if (timeOfDay === "morning"){
         console.log(shouldEat + "dinner. " + suggest + dinnerFood);
     }
 }
+
 document.getElementById("exercise4_btn").addEventListener("click", toEat);

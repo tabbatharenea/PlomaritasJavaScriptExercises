@@ -1,0 +1,77 @@
+
+
+//exercise one
+function leadingNumbers() {
+    var userNumb = prompt("Pick a number, any number");
+    var total = 0;
+    var toPrint;
+
+    for (i = 1; i <= userNumb; i++)
+        total += i;
+    toPrint = "Total is: " + total;
+    alert(toPrint);
+    console.log(toPrint);
+    }
+
+    document.getElementById("exercise1_btn").addEventListener("click", leadingNumbers);
+
+//exercise 2
+function buildString() {
+    var userString = "";
+    var userPlay;
+    var userWord;
+
+    do {
+        userPlay = prompt("Would you like to play? Type 'yes' or 'no'.");
+            if(userPlay === "yes") {
+            userWord = prompt("Enter any word") + " ";
+            userString = userString += userWord;
+        }
+    }
+    while (userPlay === "yes");
+    alert("Your whole string is: '" + userString + "'");
+    console.log("Your whole string is: '" + userString + "'");
+}
+    document.getElementById("exercise2_btn").addEventListener("click", buildString);
+
+  //exercise 3
+  function  printName() {
+var name = "My name is " + prompt("What is your name?");
+var toPrint = prompt("Would you like to print your name? Please type 'yes' or 'no'.");
+
+while (toPrint === "yes") {
+    alert(name);
+    name = name += "!";
+    toPrint = prompt("Would you like to print your name again? Please type 'yes' or 'no'.");
+    }
+    alert("Thanks for playing!");
+    console.log("Thanks for playing!");
+  }
+  document.getElementById("exercise3_btn").addEventListener("click", printName);
+
+
+//exercise 4
+function  toEat() {
+var shouldEat = "You should be eating ";
+var suggest = "I suggest you try ";
+
+var breakfastFood = "Oatmeal & Strawberries.";
+var lunchFood = "A sandwich and Soup.";
+var dinnerFood = "Pizza and a salad.";
+
+var timeOfDay = prompt("Is it currently morning, afternoon, or evening?");
+
+if (timeOfDay === "morning"){
+    alert(shouldEat + "breakfast. " + suggest + breakfastFood);
+    console.log(shouldEat + "breakfast. " + suggest + breakfastFood);
+
+    } else if (timeOfDay === "afternoon"){
+        alert(shouldEat + "lunch. " + suggest + lunchFood);
+        console.log(shouldEat + "lunch. " + suggest + lunchFood);
+
+    } else if (timeOfDay === "evening"){
+        alert(shouldEat + "dinner. " + suggest + dinnerFood);
+        console.log(shouldEat + "dinner. " + suggest + dinnerFood);
+    }
+}
+document.getElementById("exercise4_btn").addEventListener("click", toEat);

@@ -5,11 +5,11 @@ html {
 body {
     margin: 0 auto;
     padding: 30px;
-    font-family:sans-serif;
+    font-family: sans-serif;
     color: rgb(49, 49, 49);
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    }
+}
 
 section {
     padding: 10px;
@@ -17,10 +17,10 @@ section {
     border-radius: 15px;
     font-size: 1.5rem;
     transition: .5s all;
-    }
+}
 
 section:hover {
-    box-shadow: .5rem 1rem 2rem rgba(000,000,000,.6);
+    box-shadow: .5rem 1rem 2rem rgba(000, 000, 000, .6);
 }
 
 h1 {
@@ -35,6 +35,25 @@ h2 {
     margin: 0 auto;
 }
 
+.solutions {
+    margin-top: 10px;
+    padding: .5rem 1rem;
+    background-color: white;
+    border-radius: 10px;
+    transition: .3s all;
+    display: none;
+    animation: moveInLeft 1s .3s ease-in;
+    animation-fill-mode: backwards;
+}
+
+input {
+    margin-top: 10px;
+    padding: .5rem 1rem;
+    background-color: white;
+    border-radius: 10px;
+    transition: .3s all;
+}
+
 button {
     cursor: pointer;
     margin-top: 10px;
@@ -44,7 +63,7 @@ button {
     transition: .3s all;
 }
 
-button:hover{
+button:hover {
     transform: scale(1.2);
 }
 
@@ -52,7 +71,7 @@ button:active {
     background-color: white;
 }
 
-p {
+.instruct {
     font-weight: 400;
     text-indent: 10px;
 }
@@ -76,11 +95,10 @@ p {
 }
 
 .exercise4 {
-    background-color:#40e0d0;
+    background-color: #40e0d0;
     animation: moveInRight .6s 1.5s ease-in;
     animation-fill-mode: backwards;
 }
-
 
 @keyframes fadeIn {
     from {

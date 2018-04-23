@@ -42,10 +42,11 @@ function buildString() {
     //     }
     // }
     // while (userPlay === "yes");
+}
 
-    answer.innerHTML += userString;
-    answer.style.display = "table";
-    console.log("Your whole string is: '" + userString + "'");
+answer.innerHTML += userString;
+answer.style.display = "table";
+console.log("Your whole string is: '" + userString + "'");
 }
 
 document.getElementById("exercise2_btn").addEventListener("click", buildString);
